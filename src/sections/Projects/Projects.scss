@@ -1,0 +1,74 @@
+@use "../../styles/variables" as *;
+
+.projects {
+  padding: 6rem 7.5rem;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.projects .projects__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.project__card {
+  background: $color-surface;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  transition: transform 0.2s ease;
+
+  img {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: $color-text-secondary;
+  }
+}
+
+.project__card:hover {
+  transform: translateY(-5px);
+}
+
+.project__tech {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+
+  span {
+    background: $color-background;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.4rem;
+    font-size: 0.8rem;
+  }
+}
+
+.project__links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+
+  a {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 0.4rem;
+    background: $color-primary;
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+  }
+}
+
+.project__links .project__links a:hover {
+  opacity: 0.85;
+}

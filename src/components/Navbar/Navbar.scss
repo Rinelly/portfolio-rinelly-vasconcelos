@@ -1,0 +1,50 @@
+@use "../../styles/variables" as *;
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  padding: 0.5rem 1rem;
+
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  z-index: 10;
+
+  background: linear-gradient(to bottom, #1E293B(4, 4, 4, 0.7));
+  backdrop-filter: blur(3px);
+  ul {
+    display: flex;
+    gap: 2.8rem;
+    list-style: none;
+
+    li {
+      position: relative;
+      cursor: pointer;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: $color-text-primary;
+      transition: 0.3s;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+
+        &:visited {
+          color: inherit;
+        }
+
+        &:active {
+          color: inherit;
+        }
+        &:hover {
+          color: $color-white;
+          border-bottom: 2px solid $color-text-primary;
+        }
+      }
+    }
+  }
+}
+.active {
+  color: $color-white;
+  border-bottom: 2px solid $color-primary;
+}

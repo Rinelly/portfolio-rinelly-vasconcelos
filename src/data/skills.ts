@@ -1,0 +1,33 @@
+import {
+  SiReact,
+  SiTypescript,
+  SiJavascript,
+  SiHtml5,
+  SiCss,
+  SiSass,
+  SiGit,
+  SiGithub,
+  SiFigma,
+  SiVite,
+  SiPython,
+  SiPandas,
+  SiMysql,
+  SiTailwindcss,
+} from "react-icons/si";
+
+export const skills = [
+  { name: "HTML", icon: SiHtml5 },
+  { name: "CSS", icon: SiCss },
+  { name: "JavaScript", icon: SiJavascript },
+  { name: "React", icon: SiReact },
+  { name: "TypeScript", icon: SiTypescript },
+  { name: "Sass", icon: SiSass },
+  { name: "Tailwind CSS", icon: SiTailwindcss },
+  { name: "Python", icon: SiPython },
+  { name: "Pandas", icon: SiPandas },
+  { name: "SQL", icon: SiMysql },
+  { name: "Git", icon: SiGit },
+  { name: "GitHub", icon: SiGithub },
+  { name: "Figma", icon: SiFigma },
+  { name: "Vite", icon: SiVite },
+];
