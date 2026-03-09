@@ -3,7 +3,7 @@ import "./Projects.scss";
 const projects = [
   {
     title: "DecoderFox",
-    image: "../../src/assets/images/img-projeto1.png",
+    image: "../images/img-projeto1.png",
     description: "Projeto criado para criptografar e descriptografar textos.",
     tech: ["HTML", "CSS", "JavaScript"],
     demo: "https://decoder-fox.vercel.app/",
@@ -11,7 +11,7 @@ const projects = [
   },
   {
     title: "Tabata Oliveira",
-    image: "../../src/assets/images/img-projeto2.png",
+    image: "../images/img-projeto2.png",
     description: "Página de links criada para bio do Instagram.",
     tech: ["HTML", "CSS"],
     demo: "https://tabata-oliveira.vercel.app/",
@@ -19,7 +19,7 @@ const projects = [
   },
   {
     title: "Fokus",
-    image: "../../src/assets/images/img-projeto3.png",
+    image: "../images/img-projeto3.png",
     description: "Projeto Pomodoro desenvolvido com HTML, CSS e JavaScript.",
     tech: ["HTML", "CSS", "JavaScript"],
     demo: "https://fokus-alura-psi.vercel.app/",
@@ -27,7 +27,7 @@ const projects = [
   },
   {
     title: "Jogo da Memória",
-    image: "../../src/assets/images/print-jogo-da-memoria.png",
+    image: "../images/print-jogo-da-memoria.png",
     description: "Jogo da memória desenvolvido com React e TypeScript.",
     tech: ["React", "TypeScript", "CSS"],
     demo: "https://jogo-da-memoria-react-gamma.vercel.app/",
@@ -35,7 +35,7 @@ const projects = [
   },
   {
     title: "Calculadora",
-    image: "../../src/assets/images/print-calculadora.png",
+    image: "../images/print-calculadora.png",
     description: "Calculadora desenvolvida com JavaScript.",
     tech: ["HTML", "CSS", "JavaScript"],
     demo: "https://calculadora-tau-lemon.vercel.app/",

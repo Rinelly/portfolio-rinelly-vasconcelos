@@ -42,7 +42,7 @@ function Hero() {
       <div className="hero__image"></div>
 
       <div className="hero__scroll">
-        <img src="/src/assets/icons/code.svg" alt="scroll" />
+        <img src="../images/icons/code.svg" alt="scroll" />
       </div>
     </section>
   );
