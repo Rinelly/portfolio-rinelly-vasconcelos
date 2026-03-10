@@ -40,13 +40,10 @@ section:target h2::after,
 .section-active h2::after {
   content: "";
   position: absolute;
-
   left: 0;
   bottom: -6px;
-
-  width: 60px;
+  width: 80px;
   height: 3px;
-
   background: $color-primary;
   border-radius: 2px;
 }

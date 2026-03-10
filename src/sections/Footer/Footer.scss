@@ -1,0 +1,32 @@
+@use "../../styles/variables" as *;
+
+.footer {
+  padding: 1.2rem 7.5rem;
+  background: $color-surface;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 4rem;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  font-size: 0.9rem;
+  color: $color-text-secondary;
+}
+
+.footer__links {
+  display: flex;
+  gap: 1.5rem;
+
+  a {
+    color: $color-text-secondary;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}

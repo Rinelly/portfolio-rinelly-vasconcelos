@@ -16,10 +16,9 @@ function About() {
             inteligentes orientadas por dados.
           </p>
         </div>
-
         <div className="about__timeline">
           <div className="timeline__item">
-            <span className="timeline__year">2014</span>
+            <span>2014</span>
             <p className="timeline__title">Primeira experiência profissional</p>
             <p className="timeline__details">
               Início da minha trajetória profissional atuando como Assistente
@@ -29,7 +28,7 @@ function About() {
           </div>
 
           <div className="timeline__item">
-            <span className="timeline__year">2015</span>
+            <span>2015</span>
             <p className="timeline__title">
               Ingresso no programa Crediamigo (Banco do Nordeste)
             </p>
@@ -41,7 +40,7 @@ function About() {
           </div>
 
           <div className="timeline__item">
-            <span className="timeline__year">2019</span>
+            <span>2019</span>
             <p className="timeline__title">
               Início da graduação em Análise e Desenvolvimento de Sistemas
             </p>
@@ -53,7 +52,7 @@ function About() {
           </div>
 
           <div className="timeline__item">
-            <span className="timeline__year">2022</span>
+            <span>2022</span>
             <p className="timeline__title">
               Promoção a Coordenadora de Unidade e conclusão da graduação
             </p>
@@ -67,7 +66,7 @@ function About() {
           </div>
 
           <div className="timeline__item">
-            <span className="timeline__year">2023</span>
+            <span>2023</span>
             <p className="timeline__title">Gerente Geral da COOPEAGRO</p>
             <p className="timeline__details">
               Retornei à COOPEAGRO assumindo a posição de Gerente Geral, atuando
@@ -77,7 +76,7 @@ function About() {
           </div>
 
           <div className="timeline__item">
-            <span className="timeline__year">2025</span>
+            <span>2025</span>
             <p className="timeline__title">
               Foco em tecnologia e atuação como bolsista no EASY
             </p>

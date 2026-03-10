@@ -10,112 +10,91 @@
 
   h2 {
     font-size: 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     align-self: flex-start;
   }
-}
 
-.contact::before {
-  content: "";
+  form {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
-  position: absolute;
-  bottom: -260px;
-  left: -220px;
+  input,
+  textarea {
+    padding: 0.9rem 1.1rem;
+    background: $color-surface;
+    backdrop-filter: blur(6px);
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    color: $color-text-primary;
+    font-size: 0.9rem;
 
-  width: 340px;
-  height: 340px;
+    transition:
+      border 0.2s ease,
+      box-shadow 0.2s ease;
 
-  background: $color-primary;
+    &:focus {
+      outline: none;
+      border: 1px solid $color-primary;
+      box-shadow: 0 0 0 2px rgba($color-primary, 0.25);
+    }
+  }
 
-  border-radius: 55% 45% 60% 40% / 40% 60% 40% 60%;
+  textarea {
+    resize: none;
+  }
 
-  opacity: 0.22;
+  button {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: $color-primary;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
 
-  z-index: 0;
-}
+    &:hover {
+      opacity: 0.85;
+    }
+  }
 
-.contact::after {
-  content: "";
+  &::before {
+    content: "";
 
-  position: absolute;
-  top: 60px;
-  right: -90px;
+    position: absolute;
+    bottom: -260px;
+    left: -220px;
+    width: 340px;
+    height: 340px;
+    background: $color-primary;
+    border-radius: 55% 45% 60% 40% / 40% 60% 40% 60%;
+    opacity: 0.22;
+    z-index: 0;
+  }
 
-  width: 260px;
-  height: 260px;
+  &::after {
+    content: "";
 
-  background: $color-primary;
+    position: absolute;
+    top: 60px;
+    right: -90px;
 
-  border-radius: 60% 40% 50% 50% / 50% 50% 40% 60%;
+    width: 260px;
+    height: 260px;
 
-  opacity: 0.18;
+    background: $color-primary;
 
-  z-index: 0;
-}
+    border-radius: 60% 40% 50% 50% / 50% 50% 40% 60%;
 
-.contact__form {
-  position: relative;
-  z-index: 2;
+    opacity: 0.18;
 
-  width: 100%;
-  max-width: 650px;
-
-  display: flex;
-  flex-direction: column;
-
-  gap: 1.5rem;
-}
-
-.contact__form input,
-.contact__form textarea {
-  padding: 0.9rem 1.1rem;
-
-  background: $color-surface;
-  backdrop-filter: blur(6px);
-
-  border: 1px solid transparent;
-  border-radius: 0.5rem;
-
-  color: $color-text-primary;
-
-  font-size: 0.9rem;
-
-  transition:
-    border 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-.contact__form input:focus,
-.contact__form textarea:focus {
-  outline: none;
-
-  border: 1px solid $color-primary;
-
-  box-shadow: 0 0 0 2px rgba($color-primary, 0.25);
-}
-
-.contact__form textarea {
-  resize: none;
-}
-
-.contact__form button {
-  margin-top: 1rem;
-
-  padding: 0.8rem;
-
-  border: none;
-  border-radius: 0.5rem;
-
-  background: $color-primary;
-  color: white;
-
-  font-weight: 500;
-
-  cursor: pointer;
-
-  transition: opacity 0.2s ease;
-}
-
-.contact__form button:hover {
-  opacity: 0.85;
+    z-index: 0;
+  }
 }

@@ -5,45 +5,45 @@
 
   h2 {
     font-size: 2.5rem;
-    margin-bottom: 3rem;
-  }
-}
-
-.skills .skills__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-  gap: 2rem;
-}
-
-.skill__card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem 1rem;
-  background: $color-surface;
-  border-radius: 0.75rem;
-
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-
-  svg {
-    font-size: 2rem;
-    margin-bottom: 0.6rem;
+    margin-bottom: 4rem;
   }
 
-  span {
-    font-size: 0.9rem;
-    color: $color-text-secondary;
+  .skills__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 2rem;
+
+    .skill__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem 1rem;
+      background: $color-surface;
+      border-radius: 0.75rem;
+
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+      svg {
+        font-size: 2rem;
+        margin-bottom: 0.6rem;
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+
+      span {
+        font-size: 0.9rem;
+        color: $color-text-secondary;
+      }
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      }
+    }
   }
-}
-
-.skill__card:hover svg {
-  color: $color-primary;
-}
-
-.skill__card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }

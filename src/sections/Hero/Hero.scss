@@ -30,6 +30,7 @@
   position: relative;
   max-width: 32.5rem;
   z-index: 2;
+  animation: heroFade 0.8s ease forwards;
 
   h1 {
     font-weight: 700;
@@ -44,6 +45,17 @@
     font-size: 1.5rem;
     line-height: 1.2;
     color: $color-text-secondary;
+  }
+}
+
+@keyframes heroFade {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
