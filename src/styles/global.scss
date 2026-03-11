@@ -6,6 +6,22 @@
   box-sizing: border-box;
 }
 
+// html,
+// body,
+// #root {
+//   height: 100%;
+// }
+
+// #root {
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// main {
+//   flex: 1;
+// }
+
 html {
   scroll-behavior: smooth;
 }

@@ -4,12 +4,13 @@
   padding: 1.2rem 7.5rem;
   background: $color-surface;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
-  margin-top: 4rem;
+  height: auto;
 }
 
 .footer__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1rem;
   align-items: center;
   max-width: 1200px;
   font-size: 0.9rem;
@@ -21,12 +22,20 @@
   gap: 1.5rem;
 
   a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+
     color: $color-text-secondary;
     text-decoration: none;
     transition: color 0.2s ease;
 
     &:hover {
       color: $color-primary;
+    }
+
+    svg {
+      font-size: 1rem;
     }
   }
 }

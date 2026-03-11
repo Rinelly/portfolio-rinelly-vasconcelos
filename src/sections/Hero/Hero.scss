@@ -3,7 +3,6 @@
 .hero {
   display: flex;
   align-items: center;
-
   min-height: 100vh;
   padding: 0 7.5rem;
 
@@ -33,7 +32,6 @@
   animation: heroFade 0.8s ease forwards;
 
   h1 {
-    font-weight: 700;
     letter-spacing: -1px;
     font-size: 4rem;
     font-weight: 600;
@@ -65,7 +63,7 @@
   right: 0;
 
   width: 50%;
-  height: 100vh;
+  height: 100%;
 
   background-image: url("../images/hero.png");
   background-repeat: no-repeat;

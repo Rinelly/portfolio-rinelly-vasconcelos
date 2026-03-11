@@ -65,34 +65,16 @@
     }
   }
 
-  &::before {
-    content: "";
-
-    position: absolute;
-    bottom: -260px;
-    left: -220px;
-    width: 340px;
-    height: 340px;
-    background: $color-primary;
-    border-radius: 55% 45% 60% 40% / 40% 60% 40% 60%;
-    opacity: 0.22;
-    z-index: 0;
-  }
-
   &::after {
     content: "";
 
     position: absolute;
     top: 60px;
     right: -90px;
-
     width: 260px;
     height: 260px;
-
     background: $color-primary;
-
     border-radius: 60% 40% 50% 50% / 50% 50% 40% 60%;
-
     opacity: 0.18;
 
     z-index: 0;

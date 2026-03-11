@@ -1,4 +1,5 @@
 import "./Footer.scss";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -15,14 +16,16 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
+            <FaGithub />
             GitHub
           </a>
 
           <a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/rinelly"
             target="_blank"
             rel="noopener noreferrer"
           >
+            <FaLinkedin />
             LinkedIn
           </a>
         </div>
