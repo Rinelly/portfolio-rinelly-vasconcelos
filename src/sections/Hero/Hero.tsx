@@ -5,7 +5,9 @@ function Hero() {
   return (
     <section className="hero" id="hero">
       <div className="hero__content">
-        <h1>RINELLY VASCONCELOS</h1>
+        <h1>
+          RINELLY <br></br>VASCONCELOS
+        </h1>
 
         <p>
           Desenvolvedora Front-end<br></br>com foco atual em Ciência de Dados e

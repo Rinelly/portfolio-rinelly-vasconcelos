@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 function Navbar() {
   const [activeSection, setActiveSection] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -32,13 +33,41 @@ function Navbar() {
     };
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const navbar = document.querySelector(".navbar");
+
+      if (menuOpen && navbar && !navbar.contains(event.target as Node)) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [menuOpen]);
+
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
+  };
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${menuOpen ? "menu-open" : ""}`}>
+      <button
+        className="navbar__toggle"
+        onClick={toggleMenu}
+        aria-label="Abrir menu"
+      >
+        ☰
+      </button>
       <ul>
         <li>
           <a
             className={activeSection === "about" ? "active" : ""}
             href="#about"
+            onClick={() => setMenuOpen(false)}
           >
             SOBRE
           </a>
@@ -47,6 +76,7 @@ function Navbar() {
           <a
             className={activeSection === "projects" ? "active" : ""}
             href="#projects"
+            onClick={() => setMenuOpen(false)}
           >
             PROJETOS
           </a>
@@ -55,6 +85,7 @@ function Navbar() {
           <a
             className={activeSection === "skills" ? "active" : ""}
             href="#skills"
+            onClick={() => setMenuOpen(false)}
           >
             SKILLS
           </a>
@@ -63,6 +94,7 @@ function Navbar() {
           <a
             className={activeSection === "contact" ? "active" : ""}
             href="#contact"
+            onClick={() => setMenuOpen(false)}
           >
             CONTATO
           </a>
